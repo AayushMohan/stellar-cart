@@ -121,7 +121,7 @@ export type Product = {
   _rev: string;
   name?: string;
   slug?: Slug;
-  Image?: {
+  image?: {
     asset?: {
       _ref: string;
       _type: "reference";
