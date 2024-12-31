@@ -1,9 +1,10 @@
+import { imageUrl } from "@/lib/imageUrl";
 import { Product } from "@/sanity.types";
 import Image from "next/image";
 import Link from "next/link";
 
 const ProductThumb = ({ product }: { product: Product }) => {
-  const isOutOfStock = product.stock !== null && product.stock <= 0;
+  const isOutOfStock = product.stock != null && product.stock <= 0;
   return (
     <Link
       href={`/products/${product.slug?.current}`}
